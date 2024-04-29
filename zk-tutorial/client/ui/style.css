@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    user-select: none;
+}
+
+
+@font-face{
+    font-family: Akira;
+    src: url(/client/ui/fonts/font.otf)
+}
+
+
+.tutorial-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.information-container{
+    position: absolute;
+    height: 15%;
+    width: 30%;
+    left: 2.5%;
+    top: 10%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.hot-bar{
+    position: absolute;
+    height: 5.5%;
+    width: 30%;
+    top: 25.15%;
+    left: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hot-bar-item{
+    position: relative;
+    width: 45%;
+    height: 90%;
+    font-size: 11px;
+    font-family: Akira;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-name{
+    position: absolute;
+    height: 4%;
+    width: 30%;
+    left: 2.5%;
+    top: 5.5%;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+#location-name{
+    font-size: 15px;
+    font-family: Akira;
+    margin-left: 3%;
+    color: white;
+}
+
+#back:hover{
+    background-color: rgb(255, 0, 0, 0.6);
+}
+
+#next:hover{
+    background-color: rgba(21, 242, 69, 0.6);
+}
+
+
+#skip:hover{
+    background-color: rgb(255, 0, 0, 0.6);
+}
+
+#accept:hover{
+    background-color: rgba(21, 242, 69, 0.6);
+}
+
+.location-description{
+    font-size: 17.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    height: 88%;
+    top: 7%;
+    width: 94.3%;
+    left: 3%;
+    overflow: auto;
+    color: white;
+}
+
+.tutorial-popup{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.tutorial-popup-container{
+    position: absolute;
+    height: 15%;
+    width: 25%;
+    left: 2.5%;
+    top: 40%;
+    left: 38%;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.server-name{
+    position: relative;
+    height: 5%;
+    width: 25%;
+    border-radius: 10px 10px 0 0;
+    top: 34.8%;
+    left: 38%;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.server-name span{
+    margin-left: 3%;
+    font-family: Akira;
+    font-size: 12px;
+}
+
+.popup-information{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    height: 75%;
+    width: 94%;
+    left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #707070;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 0, 0, 0.6);
+}
