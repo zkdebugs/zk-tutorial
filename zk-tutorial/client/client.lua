@@ -61,11 +61,20 @@ local function goNextOrBackwards(action)
     end
 end
 
+local function showTutorialPopUP()
+    SendNUIMessage({event = "show-popup", popUpMessage = config.popUpMessage})
+    isPromptDisplayed = not isPromptDisplayed;
+    SetNuiFocus(isPromptDisplayed, isPromptDisplayed)
+end
+
+exports('InitiateTutorial', function()
+    showTutorialPopUP()
+end)
+  
+
 if config.debug then
     RegisterCommand("testprompt", function()
-        SendNUIMessage({event = "show-popup", popUpMessage = config.popUpMessage})
-        isPromptDisplayed = not isPromptDisplayed;
-        SetNuiFocus(isPromptDisplayed, isPromptDisplayed)
+        showTutorialPopUP()
     end)
 end
 

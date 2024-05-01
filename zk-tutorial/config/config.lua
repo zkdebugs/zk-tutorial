@@ -1,5 +1,5 @@
 config = {}
-config.debug = true;
+config.debug = false;
 config.popUpMessage = "Welcome to zK Development, Do you wish to start our tutorial or skip it?";
 config.Locations = {
     [1] = {
@@ -15,3 +15,8 @@ config.Locations = {
         CameraPoint = vec3(-1078.2189, -797.3642, 19.2868);
     };
 }
+
+
+--exports.zk-tutorial:InitiateTutorial()
+
+

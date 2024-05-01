@@ -14,3 +14,5 @@ files {
     "client/ui/fonts/*",
     "client/ui/*",
 }
+
+export 'InitiateTutorial'
