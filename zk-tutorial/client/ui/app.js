@@ -42,8 +42,11 @@ $(document).ready(function(){
     $('#next').click(function () {
         if (isFinishButtonDisplayed == true && CurrentSlide == MaxSlide) {
             $(".tutorial-container").fadeOut(500)
+            CurrentSlide = 1;
+            MaxSlide = 0;
+            isTutorialDisplayed = false;
+            isFinishButtonDisplayed = false; 
             $.post(`https://zk-tutorial/zK:TriggerAction`, JSON.stringify({event: "finish"}));
-            isFinishButtonDisplayed = false;
             $("#next").text("NEXT")
         } else {
             if (CurrentSlide !== MaxSlide && CurrentSlide < MaxSlide) {

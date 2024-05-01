@@ -27,7 +27,7 @@ local function setCameraAtLocation()
 end
 
 local function hideDuringTutorial()
-    DisplayRadar(true) -- stuff you want to hide during tutorial, huds, whatever it may be will go here.
+    DisplayRadar(false) -- stuff you want to hide during tutorial, huds, whatever it may be will go here.
 end
 
 local function finishedTutorial()
@@ -43,6 +43,7 @@ local function finishedTutorial()
     SetNuiFocus(isPromptDisplayed, isPromptDisplayed)
     Wait(500)
     DoScreenFadeIn(500)
+    DisplayRadar(true) 
 end
 
 local function goNextOrBackwards(action)
