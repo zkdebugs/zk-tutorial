@@ -1,5 +1,5 @@
 config = {}
-config.debug = true;
+config.debug = false;
 config.popUpMessage = "Welcome to zK tutorial, Do you wish to start our tutorial or skip it?";
 config.Locations = {
     [1] = {
