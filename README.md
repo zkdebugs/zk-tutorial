@@ -17,3 +17,9 @@ To initiate the toturial pop up simply use the following export in your script.
 
 
 https://www.youtube.com/watch?v=jUkkzVGIpKY
+
+
+
+# Discord 
+
+https://discord.gg/sxrh27MM
